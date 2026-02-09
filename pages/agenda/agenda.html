@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Agenda - PHP & Zend Framework Custom Course</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/ProgressBG-PHP-Ind-Slides/outfit/images/logos/favicon-32.png">
+    <!-- VENDORs -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- CUSTOMs -->
+    <link rel="stylesheet" type="text/css" href="/ProgressBG-PHP-Ind-Slides/outfit/css/master.css">
+    <link rel="stylesheet" type="text/css" href="/ProgressBG-PHP-Ind-Slides/outfit/css/agenda.css">
+    <base target="_blank">
+</head>
+<body class="background_gradient_left_right">
+<header class="dark_centered_background_gradient">
+    <h1>PHP & Zend Framework Custom Course</h1>
+    <h2><img src="/ProgressBG-PHP-Ind-Slides/outfit/images/logos/ProgressBG_logo.png" alt="ProgressBG Logo"></h2>
+    <h3>Agenda</h3>
+</header>
+<main>
+    <section class="syllabus">
+        <div class="toggleButtons">
+            <span class="toggleSubThemes">Toggle sub-themes</span>
+        </div>
+        <div class="themes">
+            <article><h1>PHP Fundamentals</h1>                
+                <section id="CourseIntro" data-hours="5">
+                    <h3>Course Intro & Environment Setup</h3>
+                    <ol>
+                        <li>Get to know each other</li>
+                        <li>Student's knowledge & codebase review</li>
+                        <li>Course roadmap and goals</li>       
+                        <li>Setting up the development environment (PHP 8+, Apache/Nginx, MySQL).</li>
+                        <li>Docker for PHP development.</li>    
+                        <li>Version Control with Git refresher.</li>
+                        <li>Code Editor/IDE setup and useful extensions.</li>                 
+                    </ol>
+                </section>                
+                <section id="PHPModernFundamentals" data-hours="7" data-wip>
+                    <h3>PHP Modern Fundamentals</h3>
+                    <ol>
+                        <li>PHP syntax and structure.</li>
+                        <li>PHP variables, data types, and operators.</li>
+                        <li>Control structures (if/else, switch, loops).</li>
+                        <li>Functions and arrays.</li>
+                        <li>Namespaces.</li>
+                        <li>Object-Oriented Programming (OOP) in PHP.</li>
+                        <li>Review of PHP 8+ features (Typed properties, Arrow functions, Match expression).</li>
+                        <li>Strict typing and type safety.</li>
+                        <li>Modern error handling (Try/Catch/Finally).</li>                        
+                        <li>Composer & Autoloading.</li>
+                    </ol>
+                </section>
+                <section id="ServerSideScripting" data-hours="4" data-wip>
+                    <h3>Server-side scripting using PHP to generate dynamic content.</h3>
+                    <ol>
+                        <li>Working with forms and user input.</li>
+                        <li>File handling and uploads.</li>
+                        <li>Session and cookie management.</li>
+                        <li>Working with JSON and XML data.</li>
+                        <li>Error handling and debugging techniques.</li>
+                    </ol>
+                </section>
+                <section id="DatabasePDO" data-hours="4" data-wip>
+                    <h3>Database & PDO</h3>
+                    <ol>
+                        <li>PDO (PHP Data Objects) best practices.</li>
+                        <li>Prepared statements and preventing SQL Injection.</li>
+                        <li>Transactions and error handling.</li>
+                        <li>Data mapping concepts.</li>
+                    </ol>
+                </section>
+            </article>
+            <article><h1>Zend Framework Fundamentals</h1>
+                <section id="CoreConceptsArchitecture" data-hours="2" data-wip>
+                    <h3>Core Concepts & Architecture</h3>
+                    <ol>
+                        <li>Understanding the MVC (Model-View-Controller) flow.</li>
+                        <li>Request/Response lifecycle in Laminas</li>
+                        <li>How MVC components interact</li>
+                        <li>Hands-on: Trace a request through a sample Laminas application</li>
+                        <li>Module Structure & Organization</li>
+                        <li>Hands-on: Create a basic module</li>
+                    </ol>
+                </section>                
+                <section id="RoutingControllers" data-hours="3" data-wip>
+                    <h3>Routing & Controllers</h3>
+                    <ol>
+                        <li>Route types (Literal, Segment, Regex)</li>
+                        <li>Route parameters and constraints</li>
+                        <li>Creating and configuring routes</li>
+                        <li>Route matching and priority</li>
+                        <li>Controller basics and responsibilities</li>
+                        <li>Action methods and naming conventions</li>
+                        <li>Accessing request data (GET, POST, headers)</li>
+                        <li>Returning different response types</li>
+                        <li>Controller plugins overview</li>
+                        <li>Hands-on: Build routes and controllers for a CRUD module</li>
+                    </ol>
+                </section>
+
+                <section id="ViewLayer" data-hours="2" data-wip>
+                    <h3>View Layer & Templates</h3>
+                    <ol>
+                        <li>View rendering process</li>
+                        <li>View models and data passing</li>
+                        <li>Template files and view scripts</li>
+                        <li>Layout system and hierarchical views</li>
+                        <li>View helpers (common and custom)</li>
+                        <li>Hands-on: Create templates with layouts and partials</li>
+                    </ol>
+                </section>              
+                <section id="DependencyManagemet" data-hours="2" data-wip>
+                    <h3>Dependency Management</h3>
+                    <ol>
+                        <li>Understanding the Service Container concept</li>
+                        <li>Service Manager configuration (factories, invokables, aliases)</li>
+                        <li>Dependency Injection patterns:</li>
+                        <li>Creating and registering services</li>
+                        <li>Using services in controllers</li>
+                        <li>Hands-on: Create custom services and inject them. Refactor a hard-coded controller to use DI.</li>                        
+                    </ol>
+                </section>
+                <section id="Configuration Architecture" data-hours="1" data-wip>
+                    <h3>Configuration Architecture</h3>
+                    <ol>
+                        <li>Configuration file structure (global vs module configs)</li>
+                        <li>Configuration merging and priority</li>
+                        <li>Environment-specific configuration</li>
+                        <li>Accessing configuration in code</li>
+                        <li>Hands-on: Set up development/production configurations</li>
+                    </ol>
+                </section>                
+                <section id="FormsInputValidation" data-hours="2" data-wip>
+                    <h3>Forms & Input Validation</h3>
+                    <ol>
+                        <li>Form creation and fieldsets</li>
+                        <li>Form rendering in views</li>
+                        <li>InputFilter chains and validators</li>
+                        <li>Custom validators</li>
+                        <li>CSRF protection</li>
+                        <li>Hands-on: Build a contact form with validation</li>
+                    </ol>
+                </section>                
+                <section id="DatabaseInteraction" data-hours="2" data-wip>
+                    <h3>Database Interaction</h3>
+                    <ol>
+                        <li>Laminas\Db overview and setup</li>
+                        <li>TableGateway pattern</li>
+                        <li>Writing queries (select, insert, update, delete)</li>
+                        <li>Joins and complex queries</li>
+                        <li>Result set handling</li>
+                        <li>Hands-on: Create a TableGateway for a database table</li>
+                    </ol>
+                </section>                
+                <section id="Hydrators" data-hours="1" data-wip>
+                    <h3>Hydrators</h3>
+                    <ol>
+                        <li>Hydrator concept and use cases</li>
+                        <li>Common hydrators (ArraySerializable, ClassMethods, Reflection)</li>
+                        <li>Object ↔ Array conversion</li>
+                        <li>Using hydrators with forms and database</li>
+                        <li>Hands-on: Use hydrators to map form data to entities</li>
+                    </ol>
+                </section>
+                <section id="EventManager" data-hours="1" data-wip>
+                    <h3>Event Manager</h3>
+                    <ol>
+                        <li>Event-driven architecture benefits</li>
+                        <li>Attaching event listeners</li>
+                        <li>Triggering events</li>
+                        <li>Common application events</li>
+                        <li>Creating custom events</li>
+                        <li>Hands-on: Add logging using events</li>
+                    </ol>
+                </section>
+            </article>
+            <article><h1>Advanced Topics</h1>
+                <section id="AuthenticationAuthorization" data-hours="4" data-wip>
+                    <h3>Authentication & Authorization</h3>
+                    <ol>
+                        <li>Authentication strategies (laminas-authentication).</li>
+                        <li>Authorization using ACL (laminas-permissions-acl) or RBAC.</li>
+                        <li>Session management security.</li>
+                    </ol>
+                </section>
+
+                <section id="APIDevelopmentIntegration" data-hours="4" data-wip>
+                    <h3>API Development & Integration</h3>
+                    <ol>
+                        <li>RESTful API principles.</li>
+                        <li>Building API endpoints in Laminas.</li>
+                        <li>Content negotiation and JSON handling.</li>
+                        <li>Consuming 3rd party APIs with Laminas\Http\Client or Guzzle.</li>
+                    </ol>
+                </section>
+                <section id="RevolutVirtualPOSIntegration" data-hours="6" data-wip>
+                    <h3>Revolut Virtual POS Integration</h3>
+                    <ol>
+                        <li>Revolut Merchant API overview</li>
+                        <li>API authentication and credentials setup</li>
+                        <li>Creating and managing orders</li>
+                        <li>Payment flow implementation</li>
+                        <li>Handling Webhooks for payment status updates</li>
+                        <li>Webhook signature verification and security</li>
+                        <li>Error handling and retry logic</li>
+                        <li>Logging payment transactions</li>
+                        <li>Testing with Revolut Sandbox environment</li>
+                        <li>Handling edge cases (timeouts, failures, refunds)</li>                        
+                        <li>Hands-on: Build complete payment flow in client's site</li>
+                    </ol>
+                </section>       
+            </article>
+            <article><h1>Optional Topics</h1>
+                <section id="TestingBasics" data-hours="0" data-wip>
+                    <h3>Testing Basics</h3>
+                    <ol>
+                        <li>PHPUnit introduction</li>
+                        <li>Writing basic unit tests</li>
+                        <li>Testing controllers and services</li>
+                        <li>Mocking dependencies</li>
+                        <li>Hands-on: Write tests for a service class</li>
+                    </ol>
+                </section>
+                <section id="Middleware" data-hours="0" data-wip>
+                    <h3>Middleware (Mezzio/modern stack)</h3>
+                    <ol>
+                        <li>PSR-15 middleware concepts</li>
+                        <li>Middleware pipeline</li>
+                        <li>Request/response flow through middleware</li>
+                    </ol>
+                </section>
+                <section id="ExistingCodebaseIntegration" data-hours="0" data-wip>
+                    <h3>Integrating into Existing Site</h3>
+                    <ol>
+                        <li>Review client's current codebase architecture</li>
+                        <li>Identifying integration points</li>
+                        <li>Migration strategy (gradual vs full)</li>
+                        <li>Maintaining backwards compatibility</li>
+                        <li>Deployment workflow and rollback plan</li>
+                        <li>Hands-on: Plan Revolut integration into client's site</li>
+                    </ol>
+                </section>
+            </article>
+        </div>
+        <div class="stats">
+            <div id="total_hours"></div>
+            <div id="total_days"></div>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="license left">
+        <p><span>Created for Individual Course.</span></p>
+    </div>
+    <div class="right">Created for <a href="http://progressbg.net">Computer Education Center Progress</a></div>
+</footer>
+<script type="text/javascript" src="/ProgressBG-PHP-Ind-Slides/outfit/js/CustomDOM.js"></script>
+<script type="text/javascript" src="/ProgressBG-PHP-Ind-Slides/outfit/js/agenda.js"></script>
+</body>
+</html>
